@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using LAB01_2_ED2.Class;
 
 namespace LAB01_2_ED2.Controllers
 {
@@ -11,29 +12,30 @@ namespace LAB01_2_ED2.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        BTree<String, Soda> Tree5 = new BTree<String, Soda>(5); //instance class btree
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        [HttpGet("GetWithParam", Name = "GetUser")]
+        public ActionResult<Soda> Get(string SearchSoda)
         {
-            _logger = logger;
+            if (SearchSoda == null)
+            {
+                List<Soda> SodaOrden = new List<Soda>();
+                // SodaOrden = Tree5.InOrden(ref SodaOrden);
+                foreach (Soda item in SodaOrden)
+                {
+                    return item;
+                }
+
+            }
+            return null;
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpPost]
+        public void Post([FromBody]Soda newSoda)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+
+            Tree5.Insert(newSoda.Name, newSoda); //method insert
+
         }
     }
 }
