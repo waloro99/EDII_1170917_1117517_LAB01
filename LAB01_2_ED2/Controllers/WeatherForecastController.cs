@@ -32,10 +32,8 @@ namespace LAB01_2_ED2.Controllers
 
         [HttpPost]
         public void Post([FromBody]Soda newSoda)
-        {
-
+        {           
             Tree5.Insert(newSoda.Name, newSoda); //method insert
-
         }
     }
 }
