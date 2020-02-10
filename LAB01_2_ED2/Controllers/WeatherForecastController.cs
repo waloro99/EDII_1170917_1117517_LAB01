@@ -12,6 +12,11 @@ namespace LAB01_2_ED2.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        readonly ISoda Inventory; 
+        public InfoIndiceController(ISoda P) { this.Inventory = P; }
+
+
+
         BTree<String, Soda> Tree5 = new BTree<String, Soda>(5); //instance class btree
        
 
