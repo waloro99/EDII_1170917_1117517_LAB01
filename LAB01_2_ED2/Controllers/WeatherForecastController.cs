@@ -13,18 +13,23 @@ namespace LAB01_2_ED2.Controllers
     public class WeatherForecastController : ControllerBase
     {
         BTree<String, Soda> Tree5 = new BTree<String, Soda>(5); //instance class btree
+       
 
-        [HttpGet("GetWithParam", Name = "GetUser")]
-        public ActionResult<Soda> Get(string SearchSoda)
+        [HttpGet("GetWithParam", Name = "GetSoda")]
+        public IEnumerable<Soda> Get(string SearchSoda)
         {
+            List<Soda> SodaOrden = new List<Soda>(); //new list
+
             if (SearchSoda == null)
             {
-                List<Soda> SodaOrden = new List<Soda>();
-                // SodaOrden = Tree5.InOrden(ref SodaOrden);
-                foreach (Soda item in SodaOrden)
-                {
-                    return item;
-                }
+                Tree5.InOrden(ref SodaOrden);
+                return SodaOrden;
+                //foreach (Soda item in SodaOrden)
+                //{
+                //    return item;
+                //}
+                //return Tree5.InOrden(ref SodaOrden);
+                //Tree5.InOrden(ref SodaOrden);
 
             }
             return null;

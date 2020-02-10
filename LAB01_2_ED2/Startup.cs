@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LAB01_2_ED2.Class;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,7 @@ namespace LAB01_2_ED2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<ISoda, ISoda>(); //Singleton
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
