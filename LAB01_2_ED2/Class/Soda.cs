@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LAB01_2_ED2.Class
 {
-    public class Soda : ISoda
+    public class Soda
     {
         public string Name { get; set; } //id 
         public string Flavor { get; set; }

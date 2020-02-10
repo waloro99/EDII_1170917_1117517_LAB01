@@ -16,3 +16,21 @@ C:\Users\walte\OneDrive\Documentos\papucho\2020\7mo Ciclo\Estructuras II\Reposit
 C:\Users\walte\OneDrive\Documentos\papucho\2020\7mo Ciclo\Estructuras II\Repositorio EstrucII\Lab012ED2\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.RazorTargetAssemblyInfo.cache
 C:\Users\walte\OneDrive\Documentos\papucho\2020\7mo Ciclo\Estructuras II\Repositorio EstrucII\Lab012ED2\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.dll
 C:\Users\walte\OneDrive\Documentos\papucho\2020\7mo Ciclo\Estructuras II\Repositorio EstrucII\Lab012ED2\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.pdb
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.csprojAssemblyReference.cache
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\staticwebassets\LAB01_2_ED2.StaticWebAssets.Manifest.cache
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\staticwebassets\LAB01_2_ED2.StaticWebAssets.xml
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.MvcApplicationPartsAssemblyInfo.cache
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.AssemblyInfoInputs.cache
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.AssemblyInfo.cs
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.dll
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.pdb
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\appsettings.Development.json
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\appsettings.json
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\LAB01_2_ED2.exe
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\LAB01_2_ED2.deps.json
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\LAB01_2_ED2.runtimeconfig.json
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\LAB01_2_ED2.runtimeconfig.dev.json
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\LAB01_2_ED2.dll
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\bin\Debug\netcoreapp3.0\LAB01_2_ED2.pdb
+D:\Universidad\1er ciclo 2020\EstructuraII\Lab\R1\EDII_1170917_1117517_LAB01\LAB01_2_ED2\obj\Debug\netcoreapp3.0\LAB01_2_ED2.RazorTargetAssemblyInfo.cache
