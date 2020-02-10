@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using LAB01_2_ED2.Repository;
+
 
 namespace LAB01_2_ED2
 {
@@ -27,7 +29,7 @@ namespace LAB01_2_ED2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<ISoda, ISoda>(); //Singleton
+            services.AddSingleton<ISodasDataBase, SodasDataBase>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
