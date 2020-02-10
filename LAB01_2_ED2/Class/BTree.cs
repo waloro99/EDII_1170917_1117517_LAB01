@@ -307,6 +307,52 @@ namespace LAB01_2_ED2.Class
             return Grade % 2 == 0;
         }//end method grade pair the tree
 
+        //------------------------------Search Functiom ------------------------------------------
+        public T GetElement(Tkey ItemKey)
+        {
+            LinkedListNode<Value> ElementPointer = null;
+            FindElemet(Root, ItemKey, ref ElementPointer);
+            if (ElementPointer == null) return default;
+            else return ElementPointer.Value.Value_Val;
+        }//end method get element
+
+        private void FindElemet(Node SubTreeRoot, Tkey ItemKey, ref LinkedListNode<Value> ElementPointer)
+        {
+            LinkedListNode<Value> ValTempLinkedListNode = SubTreeRoot.Entries.First;
+            LinkedListNode<Node> SonTempLinkedListNode = SubTreeRoot.Sons.First;
+
+            if (ValTempLinkedListNode.Value.key.CompareTo(ItemKey) > 0)
+            {
+                if (!SubTreeRoot.IsLeaf())
+                    FindElemet(SubTreeRoot.Sons.First.Value, ItemKey, ref ElementPointer);//If is smaller than the first value
+            }
+            else if (SubTreeRoot.Entries.Last.Value.key.CompareTo(ItemKey) < 0)
+            {
+                if (!SubTreeRoot.IsLeaf())
+                    FindElemet(SubTreeRoot.Sons.Last.Value, ItemKey, ref ElementPointer);//If is bigger than the last value
+            }
+
+            else//If is in the middle
+            {
+                for (int i = 0; i < SubTreeRoot.Entries.Count; i++)
+                {
+                    if (ElementPointer != null) break;
+
+                    if (ValTempLinkedListNode.Value.key.CompareTo(ItemKey) == 0) ElementPointer = ValTempLinkedListNode;
+
+                    else if ((ValTempLinkedListNode.Next.Value.key.CompareTo(ItemKey) > 0) && //If ItemKey is smaller than next value
+                        (ValTempLinkedListNode.Value.key.CompareTo(ItemKey) < 0) &&//if ItemKey is bigger than actual value
+                        !(SubTreeRoot.IsLeaf()))//If this is not a leaf
+                    {
+                        for (int j = 0; j <= i; j++) SonTempLinkedListNode = SonTempLinkedListNode.Next;
+                        FindElemet(SonTempLinkedListNode.Value, ItemKey, ref ElementPointer);
+                    }
+
+                    else ValTempLinkedListNode = ValTempLinkedListNode.Next;
+                }
+            }
+        }//end method find element
+
         //---------------------------- Other Function --------------------------------------------
         private bool KeyIsAlreadyOnTree(Tkey newKey, Node SubTreeRoot)
         {

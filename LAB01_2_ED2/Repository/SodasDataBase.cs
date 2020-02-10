@@ -9,6 +9,7 @@ namespace LAB01_2_ED2.Repository
         //My Database
         BTree<String, Soda> myTree = new BTree<String, Soda>(5); //instance class btree
 
+        //method return all sodas
         public List<Soda> GetSodas()
         {
             List<Soda> rtrnList = new List<Soda>();
@@ -16,14 +17,16 @@ namespace LAB01_2_ED2.Repository
             return rtrnList;
         }
 
+        //method add new soda since interfaz
         public void AddNewSoda(string SodaName, Soda newSoda)
         {
             myTree.Insert(SodaName, newSoda);
         }
 
+        //method return soda since interfaz
         public Soda ReturnMySoda(string SodaName)
         {
-            return null;
+            return myTree.GetElement(SodaName);
         }
     }
 

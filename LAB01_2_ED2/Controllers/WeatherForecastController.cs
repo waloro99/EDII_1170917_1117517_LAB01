@@ -37,7 +37,6 @@ namespace LAB01_2_ED2.Controllers
                 SodaOrden.Add(SDatabase.ReturnMySoda(SearchSoda));
                 return SodaOrden;
             }
-            return null;
         }
 
         [HttpPost]
